@@ -1,4 +1,4 @@
-![Portable Rust + MinGW-w64 Setup](banner.svg)
+![Portable Rust + MinGW-w64 Setup](banner.png)
 <div align="center">
 
 # 🦀 Portable Rust + MinGW-w64 Setup
