@@ -1,5 +1,11 @@
 ![Portable Rust + MinGW-w64 Setup](banner.svg)
+<div align="center">
 
+# 🦀 Portable Rust + MinGW-w64 Setup
+
+**1-Click Windows Setup • Zero Visual Studio C++ Build Tools • 100% Portable**
+
+</div>
 # Portable Rust + MinGW-w64 Setup for Windows
 
 🌐 **Language / Sprache:** [English](#-english) | [Deutsch](#-deutsch)
