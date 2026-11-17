@@ -1,0 +1,75 @@
+<svg xmlns="http://w3.org" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#1c2128"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f74c00"/>
+      <stop offset="50%" stop-color="#ff7b39"/>
+      <stop offset="100%" stop-color="#388bfd"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#30363d" stroke-width="0.6" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="318" rx="15" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Top Accent Line -->
+  <rect x="60" y="42" width="140" height="5" rx="2.5" fill="url(#accent-grad)"/>
+
+  <!-- Left Content -->
+  <text x="60" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#f0f6fc" letter-spacing="-0.5">
+    Portable Rust + MinGW-w64
+  </text>
+  <text x="60" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#8b949e">
+    1-Click Windows Setup • Zero Visual Studio C++ Build Tools
+  </text>
+
+  <!-- Feature Pills -->
+  <g transform="translate(60, 185)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="148" height="34" rx="17" fill="#f74c00" fill-opacity="0.15" stroke="#f74c00" stroke-width="1.2"/>
+    <text x="74" y="22" text-anchor="middle" fill="#ff8b53">Rust GNU / gnullvm</text>
+
+    <!-- Pill 2 -->
+    <rect x="162" y="0" width="165" height="34" rx="17" fill="#388bfd" fill-opacity="0.15" stroke="#388bfd" stroke-width="1.2"/>
+    <text x="244" y="22" text-anchor="middle" fill="#79c0ff">MinGW-w64 MSVCRT</text>
+
+    <!-- Pill 3 -->
+    <rect x="341" y="0" width="148" height="34" rx="17" fill="#2ea043" fill-opacity="0.15" stroke="#2ea043" stroke-width="1.2"/>
+    <text x="415" y="22" text-anchor="middle" fill="#56d364">100% Portable</text>
+  </g>
+
+  <!-- Footer Note -->
+  <text x="60" y="275" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" fill="#6e7681">
+    &gt; setup_rust_mingw.bat   [N] Fresh Install   [U] Re-link Paths
+  </text>
+
+  <!-- Right Side Terminal Card -->
+  <g transform="translate(760, 52)">
+    <rect width="380" height="216" rx="12" fill="#010409" stroke="#30363d" stroke-width="1.5"/>
+    <!-- Window Dots -->
+    <circle cx="22" cy="20" r="5.5" fill="#ff5f56"/>
+    <circle cx="40" cy="20" r="5.5" fill="#ffbd2e"/>
+    <circle cx="58" cy="20" r="5.5" fill="#27c93f"/>
+    <line x1="0" y1="38" x2="380" y2="38" stroke="#21262d" stroke-width="1"/>
+
+    <!-- Terminal Lines -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13.5">
+      <text x="20" y="66" fill="#79c0ff">$ rustc --version</text>
+      <text x="20" y="88" fill="#8b949e">rustc 1.100.0 (windows-gnu)</text>
+
+      <text x="20" y="120" fill="#79c0ff">$ gcc --version</text>
+      <text x="20" y="142" fill="#8b949e">gcc.exe (MinGW-W64 MSVCRT)</text>
+
+      <text x="20" y="174" fill="#79c0ff">$ cargo run</text>
+      <text x="20" y="196" fill="#56d364" font-weight="700">✔ Hello, world!</text>
+    </g>
+  </g>
+</svg>
